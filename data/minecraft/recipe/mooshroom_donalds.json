@@ -1,0 +1,106 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "misc",
+	"group": "mooshroom_donalds",
+	"ingredients": [
+	  "minecraft:cake",
+	  "minecraft:baked_potato",
+	  [
+		"minecraft:cooked_beef",
+		"minecraft:cooked_chicken",
+		"minecraft:cooked_cod",
+		"minecraft:cooked_mutton",
+		"minecraft:cooked_porkchop",
+		"minecraft:cooked_rabbit",
+		"minecraft:cooked_salmon"
+	  ],
+	  [
+		"minecraft:cooked_beef",
+		"minecraft:cooked_chicken",
+		"minecraft:cooked_cod",
+		"minecraft:cooked_mutton",
+		"minecraft:cooked_porkchop",
+		"minecraft:cooked_rabbit",
+		"minecraft:cooked_salmon"
+	  ]
+	],
+	"result": {
+	  "components": {
+		"minecraft:profile": {
+		  "properties": [
+			{
+			  "name": "textures",
+			  "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYThmYTU2Mjg1Njk1OWRmZWZiYzEzMjhjZGZkOWQ0MzBiNjVhZjdmMjRjZjMyNjQwMDc2NzMwNWIzNGM1YjJlNSJ9fX0="
+			}
+		  ]
+		},
+		"minecraft:consumable": {
+		  "consume_seconds": 3,
+		  "animation": "eat",
+		  "sound": "minecraft:entity.generic.eat",
+		  "has_consume_particles": false,
+		  "on_consume_effects": [
+			{
+			  "type": "minecraft:apply_effects",
+			  "effects": [
+				{
+				  "id": "minecraft:absorption",
+				  "amplifier": 0,
+				  "duration": -1,
+				  "show_particles": false,
+				  "show_icon": false
+				},
+				{
+				  "id": "minecraft:saturation",
+				  "amplifier": 0,
+				  "duration": 20
+				}
+			  ],
+			  "probability": 1
+			},
+			{
+			  "type": "minecraft:apply_effects",
+			  "effects": [
+				{
+				  "id": "minecraft:strength",
+				  "amplifier": 0,
+				  "duration": 2400
+				}
+			  ],
+			  "probability": 0.2
+			},
+			{
+			  "type": "minecraft:apply_effects",
+			  "effects": [
+				{
+				  "id": "minecraft:resistance",
+				  "amplifier": 0,
+				  "duration": 2400
+				}
+			  ],
+			  "probability": 0.2
+			}
+		  ]
+		},
+		"minecraft:attribute_modifiers": [
+		  {
+			"type": "minecraft:block_interaction_range",
+			"id": "minecraft:mooshroom_energy",
+			"amount": -10,
+			"operation": "add_value",
+			"slot": "hand"
+		  }
+		],
+		"minecraft:custom_name": {
+		  "text": "MooshDonalds",
+		  "type": "text",
+		  "color": "yellow",
+		  "font": "minecraft:default",
+		  "bold": true,
+		  "italic": false
+		}
+	  },
+	  "count": 1,
+	  "id": "minecraft:player_head"
+	}
+  }
