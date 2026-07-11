@@ -8,8 +8,6 @@
   <br><br>
 </div>
 
-> 🛑 **NOTE:** This repository serves only as a landing page. The actual datapack files are not hosted here. **[Please click here to download the latest version directly from Modrinth!](https://modrinth.com/datapack/energy)**
-
 <div align="center">
   <img src="https://cdn.modrinth.com/data/cached_images/c4d951b7e51c55b1c0ebb1b41009a5a9c874a9e9.jpeg" alt="Mooshroom Banner" width="80%">
 </div>
